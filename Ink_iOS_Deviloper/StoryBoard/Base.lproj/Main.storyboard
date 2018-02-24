@@ -83,12 +83,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMt-Vl-QJT">
+                                <rect key="frame" x="144" y="490" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="csY-GG-hAq"/>
                     </view>
                     <connections>
                         <outlet property="label2" destination="p9q-DL-nmm" id="fNz-2a-c29"/>
+                        <outlet property="label4" destination="QMt-Vl-QJT" id="VBG-OR-FLM"/>
                         <outlet property="label55" destination="KBt-Ct-NJc" id="VSe-x5-ykT"/>
                         <outlet property="namelabel" destination="3c3-O1-3bP" id="TYG-Dl-44g"/>
                     </connections>
