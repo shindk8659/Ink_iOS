@@ -5,7 +5,7 @@ class LoginVC: UIViewController {
     
     @IBAction func nextpage(_ sender: Any) {
         
-        let nextView = self.storyboard!.instantiateViewController(withIdentifier: "navigationVC")
+        let nextView = self.storyboard!.instantiateViewController(withIdentifier: "tapbarVC")
             self.present(nextView, animated: true)
         
         
