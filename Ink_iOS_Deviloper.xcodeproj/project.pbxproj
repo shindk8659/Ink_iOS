@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		B05212F1FDE6962E18D888EA /* Pods_Ink_iOS_Deviloper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4438A2B3E715872AC8E80C8 /* Pods_Ink_iOS_Deviloper.framework */; };
 		C2B346A020415B760041ACDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B3469F20415B760041ACDA /* AppDelegate.swift */; };
-		C2B346A220415B760041ACDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B346A120415B760041ACDA /* ViewController.swift */; };
+		C2B346A220415B760041ACDA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B346A120415B760041ACDA /* LoginVC.swift */; };
 		C2B346A520415B760041ACDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B346A320415B760041ACDA /* Main.storyboard */; };
 		C2B346A720415B760041ACDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B346A620415B760041ACDA /* Assets.xcassets */; };
 		C2B346AA20415B760041ACDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B346A820415B760041ACDA /* LaunchScreen.storyboard */; };
-		C2B346B920415D4B0041ACDA /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B346B820415D4B0041ACDA /* ViewController2.swift */; };
+		C2CCE91920428F0600F92850 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CCE91820428F0600F92850 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +22,12 @@
 		B4438A2B3E715872AC8E80C8 /* Pods_Ink_iOS_Deviloper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ink_iOS_Deviloper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B3469C20415B760041ACDA /* Ink_iOS_Deviloper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ink_iOS_Deviloper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B3469F20415B760041ACDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C2B346A120415B760041ACDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2B346A120415B760041ACDA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		C2B346A420415B760041ACDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2B346A620415B760041ACDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2B346A920415B760041ACDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2B346AB20415B760041ACDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2B346B820415D4B0041ACDA /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		C2CCE91820428F0600F92850 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +102,8 @@
 		C2B346B320415CA40041ACDA /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				C2B346A120415B760041ACDA /* ViewController.swift */,
-				C2B346B820415D4B0041ACDA /* ViewController2.swift */,
+				C2B346A120415B760041ACDA /* LoginVC.swift */,
+				C2CCE91820428F0600F92850 /* MainVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -278,9 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2B346A220415B760041ACDA /* ViewController.swift in Sources */,
+				C2B346A220415B760041ACDA /* LoginVC.swift in Sources */,
+				C2CCE91920428F0600F92850 /* MainVC.swift in Sources */,
 				C2B346A020415B760041ACDA /* AppDelegate.swift in Sources */,
-				C2B346B920415D4B0041ACDA /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
