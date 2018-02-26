@@ -204,22 +204,84 @@
             </objects>
             <point key="canvasLocation" x="966" y="287"/>
         </scene>
-        <!--NewpostVC-->
+        <!--오늘의 글감-->
         <scene sceneID="Pdf-Nc-MC3">
             <objects>
                 <viewController id="xEI-8F-Z29" customClass="NewpostVC" customModule="Ink_iOS_Deviloper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TlZ-ZN-PYe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g36-rM-3CW">
+                                <rect key="frame" x="150" y="84" width="67" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="글감 선택">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectTpc:" destination="xEI-8F-Z29" eventType="touchUpInside" id="jgu-nP-48D"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="보유한 잉크" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WX5-dU-4Ua">
+                                <rect key="frame" x="295" y="134" width="60" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="오늘의 글을 작성하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F00-Yf-aIb">
+                                <rect key="frame" x="18" y="155" width="339" height="336"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="339" id="De4-D9-Koq"/>
+                                    <constraint firstAttribute="height" constant="336" id="eeB-YY-sIc"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCC-8Y-Ty5">
+                                <rect key="frame" x="212" y="518" width="93" height="30"/>
+                                <state key="normal" title="[뉴스피드 게시]">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZs-dZ-oPw">
+                                <rect key="frame" x="70" y="518" width="37" height="30"/>
+                                <state key="normal" title="[게시]">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xm3-df-5Pl" firstAttribute="trailing" secondItem="KCC-8Y-Ty5" secondAttribute="trailing" constant="70" id="29z-Qc-o3h"/>
+                            <constraint firstItem="g36-rM-3CW" firstAttribute="leading" secondItem="Xm3-df-5Pl" secondAttribute="leading" constant="150" id="2k0-Nm-v87"/>
+                            <constraint firstItem="WX5-dU-4Ua" firstAttribute="top" secondItem="Xm3-df-5Pl" secondAttribute="top" constant="70" id="FHx-aS-Xhe"/>
+                            <constraint firstItem="Xm3-df-5Pl" firstAttribute="bottom" secondItem="lZs-dZ-oPw" secondAttribute="bottom" constant="70" id="IYX-QV-J6X"/>
+                            <constraint firstItem="F00-Yf-aIb" firstAttribute="centerX" secondItem="Xm3-df-5Pl" secondAttribute="centerX" id="IbX-oa-Trz"/>
+                            <constraint firstItem="F00-Yf-aIb" firstAttribute="top" secondItem="Xm3-df-5Pl" secondAttribute="top" constant="91" id="JG5-I6-tCR"/>
+                            <constraint firstItem="g36-rM-3CW" firstAttribute="top" secondItem="Xm3-df-5Pl" secondAttribute="top" constant="20" id="eDe-ox-Hi2"/>
+                            <constraint firstItem="F00-Yf-aIb" firstAttribute="leading" secondItem="Xm3-df-5Pl" secondAttribute="leading" constant="18" id="fta-WS-inc"/>
+                            <constraint firstItem="lZs-dZ-oPw" firstAttribute="leading" secondItem="Xm3-df-5Pl" secondAttribute="leading" constant="70" id="iua-LY-I5h"/>
+                            <constraint firstItem="Xm3-df-5Pl" firstAttribute="trailing" secondItem="WX5-dU-4Ua" secondAttribute="trailing" constant="20" id="kgJ-oj-cOw"/>
+                            <constraint firstItem="Xm3-df-5Pl" firstAttribute="bottom" secondItem="KCC-8Y-Ty5" secondAttribute="bottom" constant="70" id="wC3-bD-w9Q"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Xm3-df-5Pl"/>
                     </view>
-                    <navigationItem key="navigationItem" id="amR-9j-N0a"/>
+                    <navigationItem key="navigationItem" title="오늘의 글감" id="Ar8-XW-l9h">
+                        <barButtonItem key="leftBarButtonItem" title="취소" id="Cz7-7o-lSY"/>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="ink" destination="WX5-dU-4Ua" id="waV-Qi-PeW"/>
+                        <outlet property="selectTopic" destination="g36-rM-3CW" id="Vv2-LL-og7"/>
+                        <outlet property="submit" destination="lZs-dZ-oPw" id="WNl-ot-eoq"/>
+                        <outlet property="submitNewspeed" destination="KCC-8Y-Ty5" id="CYC-VH-Wno"/>
+                        <outlet property="textField" destination="F00-Yf-aIb" id="8cK-Ig-3Tb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tvp-gz-KaZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1854" y="1092"/>
+            <point key="canvasLocation" x="1853.5999999999999" y="1091.6041979010495"/>
         </scene>
         <!--MypageVC-->
         <scene sceneID="xbH-11-ZcC">
