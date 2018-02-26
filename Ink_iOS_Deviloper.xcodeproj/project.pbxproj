@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		B05212F1FDE6962E18D888EA /* Pods_Ink_iOS_Deviloper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4438A2B3E715872AC8E80C8 /* Pods_Ink_iOS_Deviloper.framework */; };
+		C27F10452043D99B00365A49 /* NewspeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F10442043D99B00365A49 /* NewspeedVC.swift */; };
+		C27F10472043D9AA00365A49 /* RankVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F10462043D9AA00365A49 /* RankVC.swift */; };
+		C27F10492043D9E300365A49 /* NewpostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F10482043D9E300365A49 /* NewpostVC.swift */; };
+		C27F104B2043D9F000365A49 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F104A2043D9F000365A49 /* SearchVC.swift */; };
+		C27F104D2043DA0100365A49 /* MypageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27F104C2043DA0100365A49 /* MypageVC.swift */; };
 		C2B346A020415B760041ACDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B3469F20415B760041ACDA /* AppDelegate.swift */; };
 		C2B346A220415B760041ACDA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B346A120415B760041ACDA /* LoginVC.swift */; };
 		C2B346A520415B760041ACDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B346A320415B760041ACDA /* Main.storyboard */; };
@@ -19,6 +24,11 @@
 		04A6F4A09C3856A723786E7D /* Pods-Ink_iOS_Deviloper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ink_iOS_Deviloper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ink_iOS_Deviloper/Pods-Ink_iOS_Deviloper.release.xcconfig"; sourceTree = "<group>"; };
 		A6123C1F9A753596DF32FD0B /* Pods-Ink_iOS_Deviloper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ink_iOS_Deviloper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ink_iOS_Deviloper/Pods-Ink_iOS_Deviloper.debug.xcconfig"; sourceTree = "<group>"; };
 		B4438A2B3E715872AC8E80C8 /* Pods_Ink_iOS_Deviloper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ink_iOS_Deviloper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C27F10442043D99B00365A49 /* NewspeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewspeedVC.swift; sourceTree = "<group>"; };
+		C27F10462043D9AA00365A49 /* RankVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankVC.swift; sourceTree = "<group>"; };
+		C27F10482043D9E300365A49 /* NewpostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewpostVC.swift; sourceTree = "<group>"; };
+		C27F104A2043D9F000365A49 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		C27F104C2043DA0100365A49 /* MypageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageVC.swift; sourceTree = "<group>"; };
 		C2B3469C20415B760041ACDA /* Ink_iOS_Deviloper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ink_iOS_Deviloper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2B3469F20415B760041ACDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2B346A120415B760041ACDA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -101,6 +111,11 @@
 			isa = PBXGroup;
 			children = (
 				C2B346A120415B760041ACDA /* LoginVC.swift */,
+				C27F10442043D99B00365A49 /* NewspeedVC.swift */,
+				C27F10462043D9AA00365A49 /* RankVC.swift */,
+				C27F10482043D9E300365A49 /* NewpostVC.swift */,
+				C27F104A2043D9F000365A49 /* SearchVC.swift */,
+				C27F104C2043DA0100365A49 /* MypageVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -275,8 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C27F104B2043D9F000365A49 /* SearchVC.swift in Sources */,
+				C27F10492043D9E300365A49 /* NewpostVC.swift in Sources */,
+				C27F104D2043DA0100365A49 /* MypageVC.swift in Sources */,
+				C27F10472043D9AA00365A49 /* RankVC.swift in Sources */,
 				C2B346A220415B760041ACDA /* LoginVC.swift in Sources */,
 				C2B346A020415B760041ACDA /* AppDelegate.swift in Sources */,
+				C27F10452043D99B00365A49 /* NewspeedVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
