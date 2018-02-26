@@ -7,29 +7,61 @@
 //
 
 import UIKit
+import QuartzCore
 
 class NewpostVC: UIViewController {
+    
+    @IBOutlet weak var topic: UIButton!
+    @IBOutlet weak var submit: UIButton!
+    @IBOutlet weak var submitNewspeed: UIButton!
+    @IBOutlet weak var textField: UITextField!
+    
+    
+    
+    @IBAction func selectTopic(_ sender: Any) {
+        
+        let alertController = UIAlertController(title: "글감선택", message: "글감을 선택해주세요", preferredStyle: UIAlertControllerStyle.alert)
+        
+        
+        let oneAction = UIAlertAction(title: "One", style: .default) { _ in }
+        let twoAction = UIAlertAction(title: "Two", style: .default) { _ in }
+        let threeAction = UIAlertAction(title: "Three", style: .default) { _ in }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        alertController.addAction(oneAction)
+        alertController.addAction(twoAction)
+        alertController.addAction(threeAction)
+    
+        
+        
+        let DestructiveAction = UIAlertAction(title: "취소", style: UIAlertActionStyle.destructive) { (result : UIAlertAction) -> Void in
+            
+            print("취소")
+            
+        }
+        
+        
+        alertController.addAction(DestructiveAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.textField.layer.borderWidth = 1.0
+        self.textField.layer.borderColor=UIColor.black.cgColor
+        submit.layer.borderColor=UIColor.darkGray.cgColor
+        submitNewspeed.layer.borderColor=UIColor.darkGray.cgColor
+        
     }
-    */
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        
+    }
 
+    
 }
+
