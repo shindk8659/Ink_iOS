@@ -202,7 +202,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BYf-tj-X4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1084" y="289"/>
+            <point key="canvasLocation" x="966" y="287"/>
         </scene>
         <!--NewpostVC-->
         <scene sceneID="Pdf-Nc-MC3">
@@ -427,7 +427,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfi-3b-RhX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1084" y="-445"/>
+            <point key="canvasLocation" x="966" y="-446"/>
         </scene>
     </scenes>
 </document>
