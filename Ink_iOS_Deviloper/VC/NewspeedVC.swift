@@ -33,8 +33,10 @@ class NewspeedVC: UIViewController , UICollectionViewDataSource{
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
         let listheaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "newspeedHeader", for: indexPath) as! NewspeedCollectionReusableView
         
+        listheaderView.dailyword.text = "신동규"
         
         return listheaderView
         

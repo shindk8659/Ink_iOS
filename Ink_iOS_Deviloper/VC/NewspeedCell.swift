@@ -14,6 +14,7 @@ class NewspeedCell: UICollectionViewCell {
     @IBOutlet weak var descriptionlabel: UILabel!
     @IBOutlet weak var withconstraint: NSLayoutConstraint!
     @IBOutlet weak var comment: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

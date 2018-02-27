@@ -33,6 +33,7 @@ class SignupNM : NetworkDelegate {
                     }
                 }
                 else if value.stat == "email duplicate"{
+                    print(value.stat!)
                     self.delegate.networkResultData(resultData: "", code: "email duplicate")
                 }
             
@@ -41,6 +42,7 @@ class SignupNM : NetworkDelegate {
                 }
                 
             case .failure(let err):
+                print("fail")
                 self.delegate.networkFailed(msg: err)
             }
         }
@@ -68,6 +70,7 @@ class SignupNM : NetworkDelegate {
                 }
                 
             case .failure(let err):
+                print("fail")
                 self.delegate.networkFailed(msg: err)
             }
         }

@@ -22,6 +22,7 @@ class LoginVC: UIViewController {
         let id = gsno(Id.text)
         let pw = gsno(Pw.text)
         model.Login(email: id, pwd: pw)
+        
     }
     
     @IBAction func joinpage(_ sender: Any) {
@@ -29,10 +30,6 @@ class LoginVC: UIViewController {
         self.present(joinView, animated: true)
     }
     
-    
-    
-    
-   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,8 +51,10 @@ extension LoginVC: NetworkCallBack
     func networkResultData(resultData: Any, code: String) {
         
         if code == "Loginsuccess" {
-            let nextView = self.storyboard!.instantiateViewController(withIdentifier: "tabbarVC")
-            self.present(nextView, animated: true)
+            let storyboard: UIStoryboard = self.storyboard!
+            let nextView = storyboard.instantiateViewController(withIdentifier: "tabbarVC")
+            self.present(nextView, animated: true,completion: nil)
+            
         }
         else if code == "Loginfailed"{
             let alert = UIAlertController(title: "", message: "id와 비밀번호를 확인하세요", preferredStyle: UIAlertControllerStyle.alert)
