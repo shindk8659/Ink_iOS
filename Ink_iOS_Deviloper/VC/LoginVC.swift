@@ -13,12 +13,15 @@ extension UITextField {
 
 
 class LoginVC: UIViewController {
-    
+    @IBOutlet weak var Id: UITextField!
+    @IBOutlet weak var Pw: UITextField!
     
     @IBAction func nextpage(_ sender: Any) {
         
-        let nextView = self.storyboard!.instantiateViewController(withIdentifier: "tapbarVC")
-            self.present(nextView, animated: true)
+       let model = LoginNM(self)
+        let id = gsno(Id.text)
+        let pw = gsno(Pw.text)
+        model.Login(email: id, pwd: pw)
     }
     
     @IBAction func joinpage(_ sender: Any) {
@@ -27,8 +30,7 @@ class LoginVC: UIViewController {
     }
     
     
-    @IBOutlet weak var Id: UITextField!
-    @IBOutlet weak var Pw: UITextField!
+    
     
    
     override func viewDidLoad() {
@@ -46,4 +48,26 @@ class LoginVC: UIViewController {
     }
     
     
+}
+extension LoginVC: NetworkCallBack
+{
+    func networkResultData(resultData: Any, code: String) {
+        
+        if code == "Loginsuccess" {
+            let nextView = self.storyboard!.instantiateViewController(withIdentifier: "tabbarVC")
+            self.present(nextView, animated: true)
+        }
+        else if code == "Loginfailed"{
+            let alert = UIAlertController(title: "", message: "id와 비밀번호를 확인하세요", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+        else {
+            let alert = UIAlertController(title: "네트워크 오류", message: "파라미터를 확인하세요", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+    }
 }

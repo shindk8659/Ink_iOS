@@ -9,10 +9,7 @@
 /* Begin PBXBuildFile section */
 		04D3207D204408AC0067CE3D /* JoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3207C204408AC0067CE3D /* JoinVC.swift */; };
 		B05212F1FDE6962E18D888EA /* Pods_Ink_iOS_Deviloper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4438A2B3E715872AC8E80C8 /* Pods_Ink_iOS_Deviloper.framework */; };
-		C203DB2020449A51009939CE /* NewspeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C203DB1D20449A50009939CE /* NewspeedVC.swift */; };
-		C203DB2120449A51009939CE /* NewspeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C203DB1E20449A51009939CE /* NewspeedCell.xib */; };
 		C203DB242044A23A009939CE /* NewspeedCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C203DB232044A23A009939CE /* NewspeedCollectionReusableView.swift */; };
-		C203DB282044A5E5009939CE /* NewspeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C203DB272044A5E5009939CE /* NewspeedCell.swift */; };
 		C203DB2A2044A81B009939CE /* CommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C203DB292044A81B009939CE /* CommentVC.swift */; };
 		C203DB2C2044A961009939CE /* CommentCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C203DB2B2044A961009939CE /* CommentCollectionReusableView.swift */; };
 		C203DB332044ADDA009939CE /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C203DB312044ADDA009939CE /* CommentCell.swift */; };
@@ -26,6 +23,16 @@
 		C2B346A520415B760041ACDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B346A320415B760041ACDA /* Main.storyboard */; };
 		C2B346A720415B760041ACDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B346A620415B760041ACDA /* Assets.xcassets */; };
 		C2B346AA20415B760041ACDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2B346A820415B760041ACDA /* LaunchScreen.storyboard */; };
+		C2B59A4520450C2400B933CE /* NewspeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B59A4420450C2400B933CE /* NewspeedVC.swift */; };
+		C2B59A4820450C5600B933CE /* NewspeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B59A4620450C5600B933CE /* NewspeedCell.swift */; };
+		C2B59A4920450C5600B933CE /* NewspeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2B59A4720450C5600B933CE /* NewspeedCell.xib */; };
+		C2FC9B702045269300D72B48 /* CustomExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FC9B6F2045269300D72B48 /* CustomExtension.swift */; };
+		C2FC9B72204526BF00D72B48 /* NetworkCallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FC9B71204526BF00D72B48 /* NetworkCallBack.swift */; };
+		C2FC9B74204526F200D72B48 /* LoginVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FC9B73204526F200D72B48 /* LoginVO.swift */; };
+		C2FC9B78204527BF00D72B48 /* LoginNM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FC9B77204527BF00D72B48 /* LoginNM.swift */; };
+		C2FC9B7A2045281900D72B48 /* SignupNM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FC9B792045281900D72B48 /* SignupNM.swift */; };
+		C2FC9B7C2045283D00D72B48 /* NetwrokDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FC9B7B2045283D00D72B48 /* NetwrokDelegate.swift */; };
+		C2FC9B7E2045299900D72B48 /* SignupVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FC9B7D2045299900D72B48 /* SignupVO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +40,7 @@
 		04D3207C204408AC0067CE3D /* JoinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinVC.swift; sourceTree = "<group>"; };
 		A6123C1F9A753596DF32FD0B /* Pods-Ink_iOS_Deviloper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ink_iOS_Deviloper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ink_iOS_Deviloper/Pods-Ink_iOS_Deviloper.debug.xcconfig"; sourceTree = "<group>"; };
 		B4438A2B3E715872AC8E80C8 /* Pods_Ink_iOS_Deviloper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ink_iOS_Deviloper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C203DB1D20449A50009939CE /* NewspeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewspeedVC.swift; sourceTree = "<group>"; };
-		C203DB1E20449A51009939CE /* NewspeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewspeedCell.xib; sourceTree = "<group>"; };
 		C203DB232044A23A009939CE /* NewspeedCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewspeedCollectionReusableView.swift; sourceTree = "<group>"; };
-		C203DB272044A5E5009939CE /* NewspeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewspeedCell.swift; sourceTree = "<group>"; };
 		C203DB292044A81B009939CE /* CommentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentVC.swift; sourceTree = "<group>"; };
 		C203DB2B2044A961009939CE /* CommentCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCollectionReusableView.swift; sourceTree = "<group>"; };
 		C203DB312044ADDA009939CE /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
@@ -52,6 +56,16 @@
 		C2B346A620415B760041ACDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2B346A920415B760041ACDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2B346AB20415B760041ACDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2B59A4420450C2400B933CE /* NewspeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewspeedVC.swift; sourceTree = "<group>"; };
+		C2B59A4620450C5600B933CE /* NewspeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewspeedCell.swift; sourceTree = "<group>"; };
+		C2B59A4720450C5600B933CE /* NewspeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewspeedCell.xib; sourceTree = "<group>"; };
+		C2FC9B6F2045269300D72B48 /* CustomExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomExtension.swift; path = Ink_iOS_Deviloper/VC/CustomExtension.swift; sourceTree = SOURCE_ROOT; };
+		C2FC9B71204526BF00D72B48 /* NetworkCallBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkCallBack.swift; path = Ink_iOS_Deviloper/VC/NetworkCallBack.swift; sourceTree = SOURCE_ROOT; };
+		C2FC9B73204526F200D72B48 /* LoginVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginVO.swift; path = Ink_iOS_Deviloper/Model/Object/LoginVO.swift; sourceTree = SOURCE_ROOT; };
+		C2FC9B77204527BF00D72B48 /* LoginNM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNM.swift; sourceTree = "<group>"; };
+		C2FC9B792045281900D72B48 /* SignupNM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupNM.swift; sourceTree = "<group>"; };
+		C2FC9B7B2045283D00D72B48 /* NetwrokDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwrokDelegate.swift; sourceTree = "<group>"; };
+		C2FC9B7D2045299900D72B48 /* SignupVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +133,7 @@
 		C2B346B220415C720041ACDA /* CustomStyle */ = {
 			isa = PBXGroup;
 			children = (
+				C2FC9B6F2045269300D72B48 /* CustomExtension.swift */,
 			);
 			path = CustomStyle;
 			sourceTree = "<group>";
@@ -132,10 +147,10 @@
 				C27F104A2043D9F000365A49 /* SearchVC.swift */,
 				C27F104C2043DA0100365A49 /* MypageVC.swift */,
 				04D3207C204408AC0067CE3D /* JoinVC.swift */,
-				C203DB1D20449A50009939CE /* NewspeedVC.swift */,
+				C2B59A4420450C2400B933CE /* NewspeedVC.swift */,
 				C203DB232044A23A009939CE /* NewspeedCollectionReusableView.swift */,
-				C203DB272044A5E5009939CE /* NewspeedCell.swift */,
-				C203DB1E20449A51009939CE /* NewspeedCell.xib */,
+				C2B59A4620450C5600B933CE /* NewspeedCell.swift */,
+				C2B59A4720450C5600B933CE /* NewspeedCell.xib */,
 				C203DB292044A81B009939CE /* CommentVC.swift */,
 				C203DB2B2044A961009939CE /* CommentCollectionReusableView.swift */,
 				C203DB312044ADDA009939CE /* CommentCell.swift */,
@@ -147,6 +162,7 @@
 		C2B346B420415CA90041ACDA /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				C2FC9B71204526BF00D72B48 /* NetworkCallBack.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -154,6 +170,8 @@
 		C2B346B520415CB40041ACDA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C2FC9B752045279400D72B48 /* Object */,
+				C2FC9B762045279C00D72B48 /* Network */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +182,25 @@
 				C2B346A620415B760041ACDA /* Assets.xcassets */,
 			);
 			path = Resaurce;
+			sourceTree = "<group>";
+		};
+		C2FC9B752045279400D72B48 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				C2FC9B73204526F200D72B48 /* LoginVO.swift */,
+				C2FC9B7D2045299900D72B48 /* SignupVO.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		C2FC9B762045279C00D72B48 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C2FC9B77204527BF00D72B48 /* LoginNM.swift */,
+				C2FC9B792045281900D72B48 /* SignupNM.swift */,
+				C2FC9B7B2045283D00D72B48 /* NetwrokDelegate.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		D992E365F85088F28CEB9C17 /* Pods */ = {
@@ -238,8 +275,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C203DB342044ADDA009939CE /* CommentCell.xib in Resources */,
+				C2B59A4920450C5600B933CE /* NewspeedCell.xib in Resources */,
 				C2B346AA20415B760041ACDA /* LaunchScreen.storyboard in Resources */,
-				C203DB2120449A51009939CE /* NewspeedCell.xib in Resources */,
 				C2B346A720415B760041ACDA /* Assets.xcassets in Resources */,
 				C2B346A520415B760041ACDA /* Main.storyboard in Resources */,
 			);
@@ -318,16 +355,23 @@
 			files = (
 				C203DB332044ADDA009939CE /* CommentCell.swift in Sources */,
 				C203DB242044A23A009939CE /* NewspeedCollectionReusableView.swift in Sources */,
+				C2FC9B7A2045281900D72B48 /* SignupNM.swift in Sources */,
 				04D3207D204408AC0067CE3D /* JoinVC.swift in Sources */,
+				C2FC9B7C2045283D00D72B48 /* NetwrokDelegate.swift in Sources */,
+				C2FC9B78204527BF00D72B48 /* LoginNM.swift in Sources */,
 				C203DB2A2044A81B009939CE /* CommentVC.swift in Sources */,
+				C2B59A4820450C5600B933CE /* NewspeedCell.swift in Sources */,
 				C27F104B2043D9F000365A49 /* SearchVC.swift in Sources */,
 				C27F10492043D9E300365A49 /* NewpostVC.swift in Sources */,
-				C203DB2020449A51009939CE /* NewspeedVC.swift in Sources */,
 				C27F104D2043DA0100365A49 /* MypageVC.swift in Sources */,
 				C27F10472043D9AA00365A49 /* RankVC.swift in Sources */,
-				C203DB282044A5E5009939CE /* NewspeedCell.swift in Sources */,
 				C2B346A220415B760041ACDA /* LoginVC.swift in Sources */,
+				C2B59A4520450C2400B933CE /* NewspeedVC.swift in Sources */,
 				C2B346A020415B760041ACDA /* AppDelegate.swift in Sources */,
+				C2FC9B74204526F200D72B48 /* LoginVO.swift in Sources */,
+				C2FC9B7E2045299900D72B48 /* SignupVO.swift in Sources */,
+				C2FC9B702045269300D72B48 /* CustomExtension.swift in Sources */,
+				C2FC9B72204526BF00D72B48 /* NetworkCallBack.swift in Sources */,
 				C203DB2C2044A961009939CE /* CommentCollectionReusableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

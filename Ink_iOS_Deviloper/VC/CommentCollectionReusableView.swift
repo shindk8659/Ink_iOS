@@ -12,10 +12,9 @@ import UIKit
 class CommentCollectionReusableView: UICollectionReusableView {
     
    
-    @IBOutlet weak var likeLabel: UILabel!
-    @IBOutlet weak var commentLabel: UILabel!
-    @IBOutlet weak var scrapLabel: UILabel!
-    @IBOutlet weak var createdLabel: UILabel!
+    @IBOutlet weak var name: UILabel!
+    
+  
     
 }
 
