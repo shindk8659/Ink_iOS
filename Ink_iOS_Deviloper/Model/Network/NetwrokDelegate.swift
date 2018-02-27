@@ -12,7 +12,7 @@ import SwiftyJSON
 
 class NetworkDelegate{
     
-    internal let baseURL = "http://13.125.61.58:3000"
+    internal let baseURL = "http://13.124.156.77:3000/api"
     var delegate: NetworkCallBack
     
     init(_ delegate: NetworkCallBack) {

@@ -29,16 +29,15 @@ class LoginNM : NetworkDelegate{
                     return
                 }
                 if value.stat == "success" {
-                    print("success")
                     if let results = value.stat{
                         self.delegate.networkResultData(resultData: results, code: "Loginsuccess")
                     }
                 }
                 else if value.stat == "login fail"{
                     if let results = value.stat{
-                        print("loginfail")
                         self.delegate.networkResultData(resultData: results, code: "Loginfailed")
                     }
+                    
                     
                 }
                 else {
@@ -46,7 +45,6 @@ class LoginNM : NetworkDelegate{
                 }
                 
             case .failure(let err):
-                print("fail")
                 self.delegate.networkFailed(msg: err)
             }
         }
