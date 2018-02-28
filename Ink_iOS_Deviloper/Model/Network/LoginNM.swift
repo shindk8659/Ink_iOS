@@ -21,7 +21,7 @@ class LoginNM : NetworkDelegate{
         ]
         
         Alamofire.request(URL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: nil).validate(statusCode: 200..<404).responseObject {
-            (response: DataResponse<Signup>) in
+            (response: DataResponse<SignupLogin>) in
             switch response.result {
             case .success:
                 guard let value = response.result.value else {

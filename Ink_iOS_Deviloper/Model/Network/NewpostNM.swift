@@ -1,42 +1,40 @@
 //
-//  SignupNetwork.swift
+//  NewpostNM.swift
 //  Ink_iOS_Deviloper
 //
-//  Created by 신동규 on 2018. 2. 27..
+//  Created by 신동규 on 2018. 2. 28..
 //  Copyright © 2018년 신동규. All rights reserved.
 //
+
 import Foundation
 import Alamofire
 import AlamofireObjectMapper
 import ObjectMapper
 
-
-class SignupNM : NetworkDelegate {
-    func Signup(email: String, pwd: String) {
-        let URL = "\(baseURL)/login/signup"
+class NewpostNM : NetworkDelegate{
+    
+    func postmyfeed(bulletin_text: String, topic_text: String, bulletin_ink: Int) {
+        let URL = "\(baseURL)/board/createbulletin"
         let body = [
-            "email" : email,
-            "pwd" : pwd
-        ]
+            "bulletin_text" : bulletin_text,
+            "topic_text" : topic_text,
+            "bulletin_ink" : bulletin_ink
+            ] as [String : Any] 
         
         Alamofire.request(URL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: nil).validate(statusCode: 200..<404).responseObject {
-            (response: DataResponse<SignupLogin>) in
+            (response: DataResponse<Newpost>) in
             switch response.result {
             case .success:
                 guard let value = response.result.value else {
                     self.delegate.networkFailed(msg: "")
                     return
                 }
-                if value.stat == "success" {
+                if value.stat == "select success" {
+                    print("success1")
                     if let results = value.stat{
-                        self.delegate.networkResultData(resultData: results, code: "signupsuccess")
+                        self.delegate.networkResultData(resultData: results, code: "postmyfeedsuccess")
                     }
                 }
-                else if value.stat == "email duplicate"{
-                    print(value.stat!)
-                    self.delegate.networkResultData(resultData: "", code: "email duplicate")
-                }
-            
                 else {
                     self.delegate.networkResultData(resultData: "", code: "fail")
                 }
@@ -47,26 +45,30 @@ class SignupNM : NetworkDelegate {
             }
         }
     }
-    func EmailDupicate(email: String) {
-        let URL = "\(baseURL)/login/signconfig"
+    func postnewspeed(bulletin_text: String, topic_text: String, bulletin_ink: Int) {
+        let URL = "\(baseURL)/board/createbulletin"
         let body = [
-            "email" : email
-        ]
+            "bulletin_text" : bulletin_text,
+            "topic_text" : topic_text,
+            "bulletin_ink" : bulletin_ink
+            ] as [String : Any]
         
         Alamofire.request(URL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: nil).validate(statusCode: 200..<404).responseObject {
-            (response: DataResponse<SignupLogin>) in
+            (response: DataResponse<Newpost>) in
             switch response.result {
             case .success:
                 guard let value = response.result.value else {
                     self.delegate.networkFailed(msg: "")
                     return
                 }
-                if value.stat == "success" {
+                if value.stat == "select success" {
+                    print("success")
                     if let results = value.stat{
-                        self.delegate.networkResultData(resultData: results, code: "dupsuccess")
+                        self.delegate.networkResultData(resultData: results, code: "postnewspeedsuccess")
                     }
-                } else {
-                    self.delegate.networkResultData(resultData: "", code: "email duplicate")
+                }
+                else {
+                    self.delegate.networkResultData(resultData: "", code: "fail")
                 }
                 
             case .failure(let err):
@@ -75,5 +77,4 @@ class SignupNM : NetworkDelegate {
             }
         }
     }
-    
 }

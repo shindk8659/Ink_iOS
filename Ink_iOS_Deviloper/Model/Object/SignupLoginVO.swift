@@ -10,9 +10,9 @@ import Foundation
 import ObjectMapper
 
 
-class Signup: Mappable {
+class SignupLogin: Mappable {
     var stat: String?
-    var data: SignupData?
+    var data: SignupLoginData?
     
     required init?(map: Map) {
     }
@@ -22,9 +22,9 @@ class Signup: Mappable {
         data <- map["data"]
     }
 }
-class SignupData :Mappable{
+class SignupLoginData :Mappable{
     var email : String?
-    var ink : String?
+    var ink : Int?
     
     required init(map: Map) {
         
