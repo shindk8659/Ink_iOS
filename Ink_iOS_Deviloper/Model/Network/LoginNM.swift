@@ -24,6 +24,7 @@ class LoginNM : NetworkDelegate{
             (response: DataResponse<SignupLogin>) in
             switch response.result {
             case .success:
+                print("severconnect")
                 guard let value = response.result.value else {
                     self.delegate.networkFailed(msg: "")
                     return
@@ -46,7 +47,7 @@ class LoginNM : NetworkDelegate{
                 }
                 
             case .failure(let err):
-                print("fail")
+                print("server connect fail")
                 self.delegate.networkFailed(msg: err)
             }
         }

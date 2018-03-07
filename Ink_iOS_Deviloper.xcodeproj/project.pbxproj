@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04D3207D204408AC0067CE3D /* JoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3207C204408AC0067CE3D /* JoinVC.swift */; };
+		529A42BA204F1EE5002FD333 /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A42B9204F1EE5002FD333 /* TabbarVC.swift */; };
 		B05212F1FDE6962E18D888EA /* Pods_Ink_iOS_Deviloper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4438A2B3E715872AC8E80C8 /* Pods_Ink_iOS_Deviloper.framework */; };
 		C203DB242044A23A009939CE /* NewspeedCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C203DB232044A23A009939CE /* NewspeedCollectionReusableView.swift */; };
 		C203DB2A2044A81B009939CE /* CommentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C203DB292044A81B009939CE /* CommentVC.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		04A6F4A09C3856A723786E7D /* Pods-Ink_iOS_Deviloper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ink_iOS_Deviloper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ink_iOS_Deviloper/Pods-Ink_iOS_Deviloper.release.xcconfig"; sourceTree = "<group>"; };
 		04D3207C204408AC0067CE3D /* JoinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinVC.swift; sourceTree = "<group>"; };
+		529A42B9204F1EE5002FD333 /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
 		A6123C1F9A753596DF32FD0B /* Pods-Ink_iOS_Deviloper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ink_iOS_Deviloper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ink_iOS_Deviloper/Pods-Ink_iOS_Deviloper.debug.xcconfig"; sourceTree = "<group>"; };
 		B4438A2B3E715872AC8E80C8 /* Pods_Ink_iOS_Deviloper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ink_iOS_Deviloper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C203DB232044A23A009939CE /* NewspeedCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewspeedCollectionReusableView.swift; sourceTree = "<group>"; };
@@ -60,8 +62,8 @@
 		C2B59A4420450C2400B933CE /* NewspeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewspeedVC.swift; sourceTree = "<group>"; };
 		C2B59A4620450C5600B933CE /* NewspeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewspeedCell.swift; sourceTree = "<group>"; };
 		C2B59A4720450C5600B933CE /* NewspeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewspeedCell.xib; sourceTree = "<group>"; };
-		C2FC9B6F2045269300D72B48 /* CustomExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomExtension.swift; path = Ink_iOS_Deviloper/VC/CustomExtension.swift; sourceTree = SOURCE_ROOT; };
-		C2FC9B71204526BF00D72B48 /* NetworkCallBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkCallBack.swift; path = Ink_iOS_Deviloper/VC/NetworkCallBack.swift; sourceTree = SOURCE_ROOT; };
+		C2FC9B6F2045269300D72B48 /* CustomExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomExtension.swift; path = Ink_iOS_Deviloper/CustomStyle/CustomExtension.swift; sourceTree = SOURCE_ROOT; };
+		C2FC9B71204526BF00D72B48 /* NetworkCallBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkCallBack.swift; path = Ink_iOS_Deviloper/Protocol/NetworkCallBack.swift; sourceTree = SOURCE_ROOT; };
 		C2FC9B77204527BF00D72B48 /* LoginNM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNM.swift; sourceTree = "<group>"; };
 		C2FC9B792045281900D72B48 /* SignupNM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupNM.swift; sourceTree = "<group>"; };
 		C2FC9B7B2045283D00D72B48 /* NetwrokDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwrokDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5213D3D620500DB700B58694 /* CustomStyle */ = {
+			isa = PBXGroup;
+			children = (
+				C2FC9B6F2045269300D72B48 /* CustomExtension.swift */,
+			);
+			path = CustomStyle;
+			sourceTree = "<group>";
+		};
+		5213D3D720500DD300B58694 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				C2FC9B71204526BF00D72B48 /* NetworkCallBack.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		C2B3469320415B760041ACDA = {
 			isa = PBXGroup;
 			children = (
@@ -115,11 +133,11 @@
 			children = (
 				C2B3469F20415B760041ACDA /* AppDelegate.swift */,
 				C2B346AB20415B760041ACDA /* Info.plist */,
+				5213D3D620500DB700B58694 /* CustomStyle */,
 				C2B346B620415CC50041ACDA /* Resaurce */,
 				C2B346B520415CB40041ACDA /* Model */,
-				C2B346B420415CA90041ACDA /* Protocol */,
+				5213D3D720500DD300B58694 /* Protocol */,
 				C2B346B320415CA40041ACDA /* VC */,
-				C2B346B220415C720041ACDA /* CustomStyle */,
 				C2B346B120415C680041ACDA /* StoryBoard */,
 			);
 			path = Ink_iOS_Deviloper;
@@ -132,14 +150,6 @@
 				C2B346A320415B760041ACDA /* Main.storyboard */,
 			);
 			path = StoryBoard;
-			sourceTree = "<group>";
-		};
-		C2B346B220415C720041ACDA /* CustomStyle */ = {
-			isa = PBXGroup;
-			children = (
-				C2FC9B6F2045269300D72B48 /* CustomExtension.swift */,
-			);
-			path = CustomStyle;
 			sourceTree = "<group>";
 		};
 		C2B346B320415CA40041ACDA /* VC */ = {
@@ -159,16 +169,9 @@
 				C203DB312044ADDA009939CE /* CommentCell.swift */,
 				C203DB322044ADDA009939CE /* CommentCell.xib */,
 				C2FC9B832045C68500D72B48 /* MypageVC.swift */,
+				529A42B9204F1EE5002FD333 /* TabbarVC.swift */,
 			);
 			path = VC;
-			sourceTree = "<group>";
-		};
-		C2B346B420415CA90041ACDA /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				C2FC9B71204526BF00D72B48 /* NetworkCallBack.swift */,
-			);
-			path = Protocol;
 			sourceTree = "<group>";
 		};
 		C2B346B520415CB40041ACDA /* Model */ = {
@@ -376,6 +379,7 @@
 				C27F10472043D9AA00365A49 /* RankVC.swift in Sources */,
 				C2B346A220415B760041ACDA /* LoginVC.swift in Sources */,
 				C2B59A4520450C2400B933CE /* NewspeedVC.swift in Sources */,
+				529A42BA204F1EE5002FD333 /* TabbarVC.swift in Sources */,
 				C2B346A020415B760041ACDA /* AppDelegate.swift in Sources */,
 				C2FC9B7E2045299900D72B48 /* SignupLoginVO.swift in Sources */,
 				C2FC9B702045269300D72B48 /* CustomExtension.swift in Sources */,

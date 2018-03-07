@@ -25,6 +25,7 @@ class SignupLogin: Mappable {
 class SignupLoginData :Mappable{
     var email : String?
     var ink : Int?
+   
     
     required init(map: Map) {
         
@@ -33,5 +34,6 @@ class SignupLoginData :Mappable{
     func mapping(map: Map) {
         email <- map["email"]
         ink <- map["ink"]
+        
     }
 }

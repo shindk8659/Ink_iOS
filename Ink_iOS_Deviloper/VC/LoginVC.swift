@@ -1,7 +1,6 @@
 import UIKit
 
 
-
 extension UITextField {
     func addBorderBottom(height: CGFloat, color: UIColor) {
         let border = CALayer()
@@ -15,28 +14,30 @@ extension UITextField {
 class LoginVC: UIViewController {
     @IBOutlet weak var Id: UITextField!
     @IBOutlet weak var Pw: UITextField!
-    
-    @IBAction func nextpage(_ sender: Any) {
-        
-       let model = LoginNM(self)
+    @IBAction func LoginBtn(_ sender: Any) {
+        let model = LoginNM(self)
         let id = gsno(Id.text)
         let pw = gsno(Pw.text)
         model.Login(email: id, pwd: pw)
-        
     }
     
-    @IBAction func joinpage(_ sender: Any) {
+    @IBAction func JoinBtn(_ sender: Any) {
         let joinView = self.storyboard!.instantiateViewController(withIdentifier: "joinVC")
         self.present(joinView, animated: true)
     }
+    
+    
+   
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //Id.placeholder = "이름"
-        Id.addBorderBottom(height: 1.0, color: UIColor.brown)
-        Pw.addBorderBottom(height: 1.0, color: UIColor.brown)
         
+        Id.addBorderBottom(height: 1.0, color:UIColor.brown)
+        Pw.addBorderBottom(height: 1.0, color:UIColor.brown)
     }
     
     override func didReceiveMemoryWarning() {
@@ -52,7 +53,7 @@ extension LoginVC: NetworkCallBack
         
         if code == "Loginsuccess" {
             let storyboard: UIStoryboard = self.storyboard!
-            let nextView = storyboard.instantiateViewController(withIdentifier: "tabbarVC")
+            let nextView = storyboard.instantiateViewController(withIdentifier: "tabbarVC") as! TabbarVC
             self.present(nextView, animated: true,completion: nil)
             
         }
@@ -70,3 +71,4 @@ extension LoginVC: NetworkCallBack
         }
     }
 }
+
