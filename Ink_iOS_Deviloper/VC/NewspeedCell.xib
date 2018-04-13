@@ -45,8 +45,21 @@
                                 <rect key="frame" x="340" y="126" width="52" height="30"/>
                                 <state key="normal" title="담아가기"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enk-GX-OYB">
+                                <rect key="frame" x="59" y="131" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09a-Dt-7R4">
+                                <rect key="frame" x="174" y="131" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.97216337919235229" green="0.92481058835983276" blue="0.89357119798660278" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2l1-LH-x2u" firstAttribute="top" secondItem="xVv-8R-X0S" secondAttribute="top" constant="8" id="8OZ-WR-jOV"/>
                             <constraint firstAttribute="width" constant="400" id="HsC-ui-WZQ"/>
@@ -76,8 +89,10 @@
             <size key="customSize" width="632" height="170"/>
             <connections>
                 <outlet property="comment" destination="Hv2-uX-MyN" id="8aX-is-X8Y"/>
+                <outlet property="commentcount" destination="09a-Dt-7R4" id="6rT-eP-gOX"/>
                 <outlet property="descriptionlabel" destination="qgJ-ao-xAA" id="EV8-At-5p0"/>
                 <outlet property="headerlabel" destination="2l1-LH-x2u" id="16M-lg-kJD"/>
+                <outlet property="likecount" destination="Enk-GX-OYB" id="uZ5-ls-hyZ"/>
                 <outlet property="withconstraint" destination="HsC-ui-WZQ" id="CPG-ka-kJe"/>
             </connections>
             <point key="canvasLocation" x="-275" y="-51"/>

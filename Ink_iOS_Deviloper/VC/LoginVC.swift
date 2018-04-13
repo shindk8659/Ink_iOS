@@ -14,6 +14,7 @@ extension UITextField {
 class LoginVC: UIViewController {
     @IBOutlet weak var Id: UITextField!
     @IBOutlet weak var Pw: UITextField!
+    
     @IBAction func LoginBtn(_ sender: Any) {
         let model = LoginNM(self)
         let id = gsno(Id.text)

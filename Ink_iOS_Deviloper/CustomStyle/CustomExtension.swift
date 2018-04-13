@@ -80,37 +80,8 @@ extension UITextView: UITextViewDelegate {
     }
     
 }
-extension UIImage {
-    
-    /// Creates a circular outline image.
-    class func outlinedEllipse(size: CGSize, color: UIColor, lineWidth: CGFloat = 1.0) -> UIImage? {
-        
-        UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-        guard let context = UIGraphicsGetCurrentContext() else {
-            return nil
-        }
-        
-        context.setStrokeColor(color.cgColor)
-        context.setLineWidth(lineWidth)
-        // Inset the rect to account for the fact that strokes are
-        // centred on the bounds of the shape.
-        let rect = CGRect(origin: .zero, size: size).insetBy(dx: lineWidth * 0.5, dy: lineWidth * 0.5)
-        context.addEllipse(in: rect)
-        context.strokePath()
-        
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return image
-    }
-}
-extension UILabel {
-    func addBorderBottom(height: CGFloat, color: UIColor) {
-        let border = CALayer()
-        border.frame = CGRect(x: 0, y: self.frame.height-height, width: self.frame.width, height: height)
-        border.backgroundColor = color.cgColor
-        self.layer.addSublayer(border)
-    }
-}
+
+
 
 extension UITableViewCell {
     //옵셔널 String을 해제하는데 값이 nil이면 ""을 반환

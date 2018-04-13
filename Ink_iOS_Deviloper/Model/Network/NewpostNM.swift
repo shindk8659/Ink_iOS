@@ -77,4 +77,31 @@ class NewpostNM : NetworkDelegate{
             }
         }
     }
+    func topic(){
+        let URL = "\(baseURL)/topic/showtopic"
+      
+        Alamofire.request(URL, method: .post, parameters: nil, encoding: JSONEncoding.default, headers: nil).validate(statusCode: 200..<404).responseObject {
+            (response: DataResponse<Topic>) in
+            switch response.result {
+            case .success:
+                guard let value = response.result.value else {
+                    self.delegate.networkFailed(msg: "")
+                    return
+                }
+                if value.stat == "success" {
+                    print("success")
+                    if let results = value.data{
+                        self.delegate.networkResultData(resultData: results, code: "gettopicsuccess")
+                    }
+                }
+                else {
+                    self.delegate.networkResultData(resultData: "", code: "fail")
+                }
+                
+            case .failure(let err):
+                print("fail")
+                self.delegate.networkFailed(msg: err)
+            }
+        }
+    }
 }

@@ -10,6 +10,8 @@ import UIKit
 
 class NewspeedCell: UICollectionViewCell {
 
+    @IBOutlet weak var commentcount: UILabel!
+    @IBOutlet weak var likecount: UILabel!
     @IBOutlet weak var headerlabel: UILabel!
     @IBOutlet weak var descriptionlabel: UILabel!
     @IBOutlet weak var withconstraint: NSLayoutConstraint!

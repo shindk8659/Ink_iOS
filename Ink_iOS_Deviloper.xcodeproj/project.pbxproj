@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		04D3207D204408AC0067CE3D /* JoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3207C204408AC0067CE3D /* JoinVC.swift */; };
+		5218BB252050D35D00165AB6 /* TopicVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218BB242050D35D00165AB6 /* TopicVO.swift */; };
+		5218BB272051140000165AB6 /* MypageVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218BB262051140000165AB6 /* MypageVO.swift */; };
 		529A42BA204F1EE5002FD333 /* TabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529A42B9204F1EE5002FD333 /* TabbarVC.swift */; };
 		B05212F1FDE6962E18D888EA /* Pods_Ink_iOS_Deviloper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4438A2B3E715872AC8E80C8 /* Pods_Ink_iOS_Deviloper.framework */; };
 		C203DB242044A23A009939CE /* NewspeedCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C203DB232044A23A009939CE /* NewspeedCollectionReusableView.swift */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		04A6F4A09C3856A723786E7D /* Pods-Ink_iOS_Deviloper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ink_iOS_Deviloper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ink_iOS_Deviloper/Pods-Ink_iOS_Deviloper.release.xcconfig"; sourceTree = "<group>"; };
 		04D3207C204408AC0067CE3D /* JoinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinVC.swift; sourceTree = "<group>"; };
+		5218BB242050D35D00165AB6 /* TopicVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicVO.swift; sourceTree = "<group>"; };
+		5218BB262051140000165AB6 /* MypageVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageVO.swift; sourceTree = "<group>"; };
 		529A42B9204F1EE5002FD333 /* TabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarVC.swift; sourceTree = "<group>"; };
 		A6123C1F9A753596DF32FD0B /* Pods-Ink_iOS_Deviloper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ink_iOS_Deviloper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ink_iOS_Deviloper/Pods-Ink_iOS_Deviloper.debug.xcconfig"; sourceTree = "<group>"; };
 		B4438A2B3E715872AC8E80C8 /* Pods_Ink_iOS_Deviloper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ink_iOS_Deviloper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,10 +160,10 @@
 			isa = PBXGroup;
 			children = (
 				C2B346A120415B760041ACDA /* LoginVC.swift */,
-				C27F10462043D9AA00365A49 /* RankVC.swift */,
 				C27F10482043D9E300365A49 /* NewpostVC.swift */,
 				C27F104A2043D9F000365A49 /* SearchVC.swift */,
 				04D3207C204408AC0067CE3D /* JoinVC.swift */,
+				C27F10462043D9AA00365A49 /* RankVC.swift */,
 				C2B59A4420450C2400B933CE /* NewspeedVC.swift */,
 				C203DB232044A23A009939CE /* NewspeedCollectionReusableView.swift */,
 				C2B59A4620450C5600B933CE /* NewspeedCell.swift */,
@@ -196,6 +200,8 @@
 			children = (
 				C2FC9B7D2045299900D72B48 /* SignupLoginVO.swift */,
 				C2FC9B7F2045AD5200D72B48 /* NewpostVO.swift */,
+				5218BB242050D35D00165AB6 /* TopicVO.swift */,
+				5218BB262051140000165AB6 /* MypageVO.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -366,6 +372,8 @@
 				C203DB242044A23A009939CE /* NewspeedCollectionReusableView.swift in Sources */,
 				C2FC9B7A2045281900D72B48 /* SignupNM.swift in Sources */,
 				C2FC9B822045AF4600D72B48 /* NewpostNM.swift in Sources */,
+				5218BB252050D35D00165AB6 /* TopicVO.swift in Sources */,
+				5218BB272051140000165AB6 /* MypageVO.swift in Sources */,
 				04D3207D204408AC0067CE3D /* JoinVC.swift in Sources */,
 				C2FC9B7C2045283D00D72B48 /* NetwrokDelegate.swift in Sources */,
 				C2FC9B78204527BF00D72B48 /* LoginNM.swift in Sources */,
