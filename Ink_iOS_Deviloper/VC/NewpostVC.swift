@@ -15,15 +15,11 @@ class NewpostVC: UIViewController {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var submit: UIButton!
     @IBOutlet weak var submitNewspeed: UIButton!
+    
+    var inkamount:Int = 0
     var topicArray : [TopicData] = []
-    
-    var inkamount :Int = 0
     var profileData : SignupLoginData?
-    
-    
-    
-    
- 
+
     @IBAction func postmyfeed(_ sender: Any) {
         
         let postmyfeedmodel = NewpostNM(self)
@@ -42,7 +38,8 @@ class NewpostVC: UIViewController {
             
         }
         else{
-            postmyfeedmodel.postmyfeed(bulletin_text: text, topic_text: gsno(topic), bulletin_ink: 0 )
+            
+            postmyfeedmodel.postmyfeed(bulletin_text: text, topic_text: gsno(topic))
         }
         
     }
@@ -67,8 +64,8 @@ class NewpostVC: UIViewController {
                 
             }
             else{
-                if inkamount > 3 {
-                     postnewspeedmodel.postnewspeed(bulletin_text: text, topic_text: gsno(topic), bulletin_ink: 3)
+                if  inkamount > 3{
+                     postnewspeedmodel.postnewspeed(bulletin_text: text, topic_text: gsno(topic), bulletin_ink: 3 )
                     
                 }
                 else{
@@ -114,7 +111,6 @@ class NewpostVC: UIViewController {
         getmypagemodel.mypage()
         
         
-        ink.text = String(inkamount)
         textView.placeholder = "당신의 이야기를 들려주세요..."
         textView.layer.borderWidth = 2.0
         textView.layer.borderColor=UIColor.darkGray.cgColor
@@ -145,6 +141,7 @@ extension NewpostVC: NetworkCallBack
         else if code == "getmyinfo"{
             profileData = resultData as? SignupLoginData
             inkamount = gino(profileData?.ink)
+            ink.text = String(inkamount)
         }
     
         else {

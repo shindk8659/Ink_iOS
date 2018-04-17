@@ -17,18 +17,25 @@ class LoginVC: UIViewController {
     
     @IBAction func LoginBtn(_ sender: Any) {
         let model = LoginNM(self)
+        
+        if Id.text != "" && Pw.text != ""{
         let id = gsno(Id.text)
         let pw = gsno(Pw.text)
         model.Login(email: id, pwd: pw)
+            
+        }
+        else{
+            let alert = UIAlertController(title: "", message: "id와 비밀번호를 입력하세요", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+        }
     }
     
     @IBAction func JoinBtn(_ sender: Any) {
         let joinView = self.storyboard!.instantiateViewController(withIdentifier: "joinVC")
         self.present(joinView, animated: true)
     }
-    
-    
-   
     
    
     

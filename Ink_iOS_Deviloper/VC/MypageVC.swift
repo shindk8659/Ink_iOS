@@ -22,6 +22,7 @@ class MypageVC: UIViewController , UICollectionViewDataSource{
         
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         collectionView.register(UINib.init(nibName: "NewspeedCell", bundle: nil), forCellWithReuseIdentifier: "NewspeedCell")
         if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
             flowLayout.estimatedItemSize = CGSize(width: 1,height: 1)
@@ -50,10 +51,15 @@ class MypageVC: UIViewController , UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NewspeedCell", for: indexPath) as! NewspeedCell
+        
         cell.comment.addTarget(self, action: #selector(movecommentpage(_:)), for: .touchUpInside)
         cell.headerlabel.text = mypagelist[indexPath.item].topic_text
         cell.descriptionlabel.text = mypagelist[indexPath.item].bulletin_text
-        cell.likecount.text = String(describing: mypagelist[indexPath.item].bulletin_good_count!)
+        cell.likecount.text = String(gino(mypagelist[indexPath.item].bulletin_good_count))
+        
+        
+        
+       
         
         return cell
     }

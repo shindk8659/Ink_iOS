@@ -13,13 +13,12 @@ import ObjectMapper
 
 class NewpostNM : NetworkDelegate{
     
-    func postmyfeed(bulletin_text: String, topic_text: String, bulletin_ink: Int) {
-        let URL = "\(baseURL)/board/createbulletin"
+    func postmyfeed(bulletin_text: String, topic_text: String) {
+        let URL = "\(baseURL)/board/createbulletintome"
         let body = [
             "bulletin_text" : bulletin_text,
-            "topic_text" : topic_text,
-            "bulletin_ink" : bulletin_ink
-            ] as [String : Any] 
+            "topic_text" : topic_text
+            ] as [String : Any]
         
         Alamofire.request(URL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: nil).validate(statusCode: 200..<404).responseObject {
             (response: DataResponse<Newpost>) in

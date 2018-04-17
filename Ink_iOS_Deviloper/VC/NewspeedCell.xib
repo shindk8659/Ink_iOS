@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -45,16 +45,14 @@
                                 <rect key="frame" x="340" y="126" width="52" height="30"/>
                                 <state key="normal" title="담아가기"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enk-GX-OYB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enk-GX-OYB">
                                 <rect key="frame" x="59" y="131" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09a-Dt-7R4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09a-Dt-7R4">
                                 <rect key="frame" x="174" y="131" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -62,17 +60,22 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="2l1-LH-x2u" firstAttribute="top" secondItem="xVv-8R-X0S" secondAttribute="top" constant="8" id="8OZ-WR-jOV"/>
+                            <constraint firstItem="Enk-GX-OYB" firstAttribute="centerY" secondItem="o1Q-2O-dgF" secondAttribute="centerY" id="ENu-Xb-kvq"/>
                             <constraint firstAttribute="width" constant="400" id="HsC-ui-WZQ"/>
+                            <constraint firstItem="09a-Dt-7R4" firstAttribute="leading" secondItem="Hv2-uX-MyN" secondAttribute="trailing" constant="8" id="IC7-R5-sn6"/>
                             <constraint firstItem="qgJ-ao-xAA" firstAttribute="top" secondItem="2l1-LH-x2u" secondAttribute="bottom" constant="8" id="IsA-Z4-Jwt"/>
                             <constraint firstItem="qgJ-ao-xAA" firstAttribute="leading" secondItem="2l1-LH-x2u" secondAttribute="leading" id="M8B-QA-l5i"/>
                             <constraint firstAttribute="bottom" secondItem="Hv2-uX-MyN" secondAttribute="bottom" constant="14" id="UNz-MJ-hT9"/>
                             <constraint firstItem="2l1-LH-x2u" firstAttribute="leading" secondItem="xVv-8R-X0S" secondAttribute="leading" constant="8" id="Uva-eX-OCo"/>
                             <constraint firstAttribute="trailing" secondItem="2l1-LH-x2u" secondAttribute="trailing" constant="8" id="YmB-iw-dW2"/>
                             <constraint firstAttribute="bottom" secondItem="Kwq-dn-s3l" secondAttribute="bottom" constant="14" id="bj3-4O-yAG"/>
+                            <constraint firstItem="Enk-GX-OYB" firstAttribute="leading" secondItem="o1Q-2O-dgF" secondAttribute="trailing" constant="8" id="euE-66-b1D"/>
+                            <constraint firstItem="Kwq-dn-s3l" firstAttribute="centerY" secondItem="Hv2-uX-MyN" secondAttribute="centerY" id="gKd-K1-m2P"/>
                             <constraint firstAttribute="bottom" secondItem="qgJ-ao-xAA" secondAttribute="bottom" constant="52" id="gVo-14-9mU"/>
                             <constraint firstItem="o1Q-2O-dgF" firstAttribute="leading" secondItem="xVv-8R-X0S" secondAttribute="leading" constant="12" id="jQq-5a-3K8"/>
                             <constraint firstAttribute="bottom" secondItem="o1Q-2O-dgF" secondAttribute="bottom" constant="14" id="oyt-1I-lEg"/>
                             <constraint firstAttribute="trailing" secondItem="qgJ-ao-xAA" secondAttribute="trailing" constant="8" id="pzQ-Yx-bHN"/>
+                            <constraint firstItem="09a-Dt-7R4" firstAttribute="centerY" secondItem="Hv2-uX-MyN" secondAttribute="centerY" id="sNl-5J-nYv"/>
                             <constraint firstAttribute="trailing" secondItem="Kwq-dn-s3l" secondAttribute="trailing" constant="8" id="x1q-8U-baU"/>
                             <constraint firstItem="Hv2-uX-MyN" firstAttribute="leading" secondItem="o1Q-2O-dgF" secondAttribute="trailing" constant="85" id="xUE-Yr-0uu"/>
                         </constraints>
